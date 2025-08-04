@@ -1,4 +1,7 @@
 #!/home/stellarmate/venvs/bin/python
+
+# This script is used to start a flat capture session by uncapping and setting flat panel brightness.
+
 from indiClientAZ import *
 
 TARGET_BRIGHTNESS = 20  # Target brightness for flat lights
