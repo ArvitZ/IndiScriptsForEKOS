@@ -1,8 +1,7 @@
-# for logging
+# for logging and importing the PyIndi module
 import sys
 import time
 import logging
-# import the PyIndi module
 import PyIndi
 
 # The IndiClient class which inherits from the module PyIndi.BaseClient class
