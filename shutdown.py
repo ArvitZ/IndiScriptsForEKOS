@@ -11,7 +11,7 @@ This scipt is run at startup of a capture session to:
 
 from indiClientAZ import *
 
-TARGET_FOCUS_POS = 11000
+TARGET_FOCUS_POS = 0
 
 indiAZ = IndiClient()
 indiAZ.connectLocalServer()
@@ -24,8 +24,8 @@ excalibur = indiAZ.getDevice("RBF Excalibur")
 # unpark cap
 cap_parked = excalibur.getSwitch("CAP_PARK")
 indiAZ.logger.info(f"AZ --- Current state for CAP_Park: {cap_parked.getState()}")
-cap_parked[0].setState(PyIndi.ISS_OFF)
-cap_parked[1].setState(PyIndi.ISS_ON)
+cap_parked[0].setState(PyIndi.ISS_ON)
+cap_parked[1].setState(PyIndi.ISS_OFF)
 indiAZ.logger.info(f"AZ --- Set CAP_Park to {cap_parked.getState()}")
 
 # goto preset 2 auto focus position
