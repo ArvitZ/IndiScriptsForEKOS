@@ -12,7 +12,7 @@
 <RefocusEveryN enabled='false'>240</RefocusEveryN>
 <RefocusOnMeridianFlip enabled='false'/>
 <Job>
-<Exposure>3</Exposure>
+<Exposure>120</Exposure>
 <Format>RAW 16</Format>
 <Encoding>FITS</Encoding>
 <Binning>
@@ -26,11 +26,10 @@
 <H>2808</H>
 </Frame>
 <Temperature force='true'>-5</Temperature>
-<Filter>HaO3</Filter>
-<Type>Flat</Type>
-<Count>25</Count>
+<Filter>RGB</Filter>
+<Type>Light</Type>
+<Count>2</Count>
 <Delay>0</Delay>
-<PreJobScript>/media/stellarmate/AZ-SSD_01/Astronomie/scripts/start_flat_NB3.py</PreJobScript>
 <GuideDitherPerJob>0</GuideDitherPerJob>
 <FITSDirectory>/media/stellarmate/AZ-SSD_01/Astronomie/Rohdaten</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F</PlaceholderFormat>
@@ -49,47 +48,6 @@
 <Type>1</Type>
 </PreAction>
 <FlatDuration dark='false'>
-<Type>Manual</Type>
-</FlatDuration>
-</Calibration>
-</Job>
-<Job>
-<Exposure>3</Exposure>
-<Format>RAW 16</Format>
-<Encoding>FITS</Encoding>
-<Binning>
-<X>1</X>
-<Y>1</Y>
-</Binning>
-<Frame>
-<X>0</X>
-<Y>0</Y>
-<W>4128</W>
-<H>2808</H>
-</Frame>
-<Temperature force='false'>-5</Temperature>
-<Filter>HaO3</Filter>
-<Type>Dark</Type>
-<Count>25</Count>
-<Delay>0</Delay>
-<GuideDitherPerJob>0</GuideDitherPerJob>
-<FITSDirectory>/media/stellarmate/AZ-SSD_01/Astronomie/Rohdaten</FITSDirectory>
-<PlaceholderFormat>/%t/%T/%F/%t_%T_%F</PlaceholderFormat>
-<PlaceholderSuffix>3</PlaceholderSuffix>
-<UploadMode>0</UploadMode>
-<Properties>
-<PropertyVector name='CCD_CONTROLS'>
-<OneElement name='Gain'>101</OneElement>
-</PropertyVector>
-<PropertyVector name='CCD_OFFSET'>
-<OneElement name='OFFSET'>100</OneElement>
-</PropertyVector>
-</Properties>
-<Calibration>
-<PreAction>
-<Type>1</Type>
-</PreAction>
-<FlatDuration dark='true'>
 <Type>Manual</Type>
 </FlatDuration>
 </Calibration>

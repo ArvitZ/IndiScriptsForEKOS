@@ -13,6 +13,8 @@ from indiClientAZ import *
 
 TARGET_FOCUS_POS = 11000
 
+time.sleep(5)
+
 indiAZ = IndiClient()
 indiAZ.connectLocalServer()
 
